@@ -17,16 +17,12 @@
 .burger-menu span {
   height: 5px;
   width: 50%;
-  background-color: black; /* Cor inicial preta */
+  background-color: rgb(207, 17, 4);
   border-radius: 25px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s ease;
-}
-
-.burger-menu.active span {
-  background-color: red; /* Fica vermelho ao clicar */
 }
 
 .burger-menu span:nth-child(1) {
@@ -39,6 +35,10 @@
 
 .burger-menu span:nth-child(3) {
   top: 75%;
+}
+
+.burger-menu.active span {
+  background-color: rgb(255, 0, 0);
 }
 
 .burger-menu.active span:nth-child(1) {
@@ -185,7 +185,7 @@
   }
 
   .burger-menu.active span {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
   }
 }
 
